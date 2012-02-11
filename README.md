@@ -3,10 +3,17 @@ Judi [![Build Status](https://secure.travis-ci.org/augustorcn/Judi.png)](http://
 
 Judi is a tool that helps you integrate the command line with its application in php.
 
+Install
+===================
+How to install
+
+* Run bin/run_phar
+* Run composer.json
+
 License Information
 ===================
 
-Copyright (c) 2009-2011, Augusto Rocha Carneiro Napoleão.
+Copyright (c) 20011-2012, Augusto Rocha Carneiro Napoleão.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
