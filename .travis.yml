@@ -7,7 +7,6 @@ php:
 before_script:
   - wget -nc http://getcomposer.org/composer.phar
   - php composer.phar install
-  - php bin/run_phar
 
 script: make test
 
