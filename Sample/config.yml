@@ -1,0 +1,15 @@
+Commands:
+  criar:
+    class: 
+    options:
+      controller:
+        params:
+          name:
+      model:
+  deletar:
+    class: 
+    options:
+      controller:
+        params:
+          name: 
+      model:

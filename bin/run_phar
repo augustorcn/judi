@@ -1,0 +1,17 @@
+#!/usr/bin/php
+<?php
+$phar = new Phar("judi.phar", 0, "judi.phar");
+
+$phar->addFromString("autoload.php", <<<'LOADER'
+<?php
+require 'vendor/.composer/autoload.php';
+
+use Symfony\Component\ClassLoader\UniversalClassLoader;
+
+$loader = new UniversalClassLoader();
+$loader->registerNamespace('Judi', '/var/projetos/Judi/src/');
+$loader->register();
+LOADER
+);
+
+$phar->setStub("<?php Phar::mapPhar('judi.phar'); include 'phar://judi.phar/autoload.php'; __HALT_COMPILER();");

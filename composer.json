@@ -1,0 +1,19 @@
+{
+    "name": "Judi",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "Judi came to help you to abstract the integration of the command line with php application",
+    "keywords": ["judi", "cli"],
+    "homepage": "https://github.com/augustorcn/Judi",
+    "license": "New BSD",
+    "authors": [
+        {
+            "name": "Augusto Rocha Carneiro Napoleão",
+            "email": "augusto@augustorcn.com"
+        }
+    ],
+    "require": {
+        "symfony/yaml": ">=2.0.10",
+        "symfony/class-loader": ">=2.0.10" 
+    }
+}

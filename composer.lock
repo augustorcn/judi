@@ -1,0 +1,13 @@
+{
+    "hash": "4edf932b2edcd801a2f0dfb5fdfd54c5",
+    "packages": [
+        {
+            "package": "symfony\/class-loader",
+            "version": "2.1.0-dev"
+        },
+        {
+            "package": "symfony\/yaml",
+            "version": "2.1.0-dev"
+        }
+    ]
+}
