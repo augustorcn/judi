@@ -7,8 +7,8 @@ Install
 ===================
 How to install
 
-* Run bin/run_phar
 * Run composer.json
+* Run bin/run_phar
 
 License Information
 ===================
