@@ -10,6 +10,6 @@ before_script:
 	php php composer.phar install
 	php bin/run_phar
 
-test: cd tests;phpunit . 
+test: @cd tests;phpunit . 
 
   
