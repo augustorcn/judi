@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "symfony/class-loader": ">=2.0.10" 
-        "symfony/yaml": ">=2.0.10",
+        "symfony/class-loader": ">=2.0.10",
+        "symfony/yaml": ">=2.0.10"
     }
 }
