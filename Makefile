@@ -1,1 +1,2 @@
-test: @cd tests;phpunit ./
+test:
+	@cd tests;phpunit ./
