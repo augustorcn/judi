@@ -7,32 +7,29 @@ class JudiTest extends \PHPUnit_Framework_TestCase
 	/**
 	 * @dataProvider providerSetProcedure
 	 */
-	public function testSetProcedure($method, Array $name, Array $params = null)
+	public function testSetProcedure($config)
 	{
-		$Judi = new Judi(__DIR__ . '../../Sample/config.yml');
-		$Judi->setProcedure($method, $name, $params);
-		$command = $Judi->getCommand();
-		$this->assertEquals($command[$name[0]][0], $method);
-		$this->assertEquals($Judi->getOptions(), $name[1]);
-		$this->assertEquals($Judi->getParams(), $params);
-		$this->assertEquals('oi', $method);
+		$Judi = new Judi($config);
 	}
 
 	public function providerSetProcedure()
 	{
         return array(
-            array(
-                '\Sample\SampleClass',
-                array(
-                    'create' => array(
-                        'controller' => array(
-                            'name' => array(
-                                'type'    => 'string',
-                                'notnull' => true
-                            )
-                        )
-                    )
-                )
+            array("
+Commands:
+  criar:
+    class: classCriar
+    options:
+      controllerCriar:
+        params:
+          paramCriar: string
+  deletar:
+    class: classDeletar
+    options:
+      controllerDeletar:
+        params:
+          ParamDeletar: string
+          ParamDeletar2: string"
             )
 		);
 	}

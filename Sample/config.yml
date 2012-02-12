@@ -1,15 +1,14 @@
 Commands:
   criar:
-    class: 
+    class: classCriar
     options:
-      controller:
+      controllerCriar:
         params:
-          name:
-      model:
+          paramCriar: string
   deletar:
-    class: 
+    class: classDeletar
     options:
-      controller:
+      controllerDeletar:
         params:
-          name: 
-      model:
+          ParamDeletar: string
+          ParamDeletar2: string
