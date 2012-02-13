@@ -5,6 +5,7 @@ Commands:
       controllerCriar:
         params:
           paramCriar: string
+      OUTRAOPTION:
   deletar:
     class: classDeletar
     options:
@@ -12,3 +13,7 @@ Commands:
         params:
           ParamDeletar: string
           ParamDeletar2: string
+  montar: 
+    class: xx
+    params:
+      primeiro: sgtring
