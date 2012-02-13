@@ -4,9 +4,9 @@ php:
   - 5.3
   - 5.4
 
-#before_script:
-#  - wget -nc http://getcomposer.org/composer.phar
-#  - php composer.phar install
+before_script:
+  - wget -nc http://getcomposer.org/composer.phar
+  - php composer.phar install
 
 script: make test
 
