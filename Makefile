@@ -1,2 +1,2 @@
 test:
-	@chmod -R 777 *;@cd tests;phpunit ./
+	@cd tests;phpunit ./
