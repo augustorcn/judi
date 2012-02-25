@@ -1,19 +1,15 @@
-Commands:
-  criar:
-    class: classCriar
-    options:
-      controllerCriar:
-        params:
-          paramCriar: string
-      OUTRAOPTION:
-  deletar:
-    class: classDeletar
-    options:
-      controllerDeletar:
-        params:
-          ParamDeletar: string
-          ParamDeletar2: string
-  montar: 
-    class: xx
-    params:
-      primeiro: sgtring
+create:
+  controller:
+    params: {name: string, path: string}
+    return: Create\controller();
+  view:
+    params: {name: string}
+    return: Create\view();
+multiply:
+  params: {num1: int, num2: int}
+  return: num1 * num2;
+today:
+  return: date("d");
+positive:
+  params: {num: int}
+  return: num > 0 ? true : false;

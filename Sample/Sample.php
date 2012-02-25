@@ -4,8 +4,8 @@
 require 'judi.phar';
 
 try {
-	$Judi = new \Judi\Judi(__DIR__ . '/config.yml');
-	$Judi->run();
+	$judi = new \Judi\Judi();
+	$judi->run(__DIR__ . '/config.yml');
 } catch (\Exception $e) {
 	echo "{$e->getMessage()}\n";
 }
