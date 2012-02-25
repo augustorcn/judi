@@ -72,7 +72,7 @@ How to use
         // $ 14
 
         // $ php sample.php calc multiply 4 10
-        // $ 14
+        // $ 40
 
 License Information
 ===================
