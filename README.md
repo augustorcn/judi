@@ -14,39 +14,35 @@ Usage
 ===================
 How to use
 
-* First you need to instantiate the class in Judi php file that will start the application from the command line and call the run method passing a yaml file with the settings necessary to meet the requirements of your application.
+* sample.php - First you need to instantiate the class in Judi php file that will start the application from the command line and call the run method passing a yaml file with the settings necessary to meet the requirements of your application.
 
-    sample.php
+    $judi = new Judi\Judi();
+    $judi->run(__DIR__ . '/config.yml');
 
-        $judi = new Judi\Judi();
-        $judi->run(__DIR__ . '/config.yml');
+* config.yml - Configurations
 
-* Configurations
+    Sample 1
+        positive:
+          params: {num: int}
+          return: num > 0 ? true : false;
 
-    config.yml
+        // $ php sample.php positive 3
+        // $ true
 
-        Sample 1
-            positive:
-              params: {num: int}
-              return: num > 0 ? true : false;
+    Sample 2
+        today:
+          return: date('d');
 
-            // $ php sample.php positive 3
-            // $ true
+        // $ php sample.php today
+        // $ 20
 
-        Sample 2
-            today:
-              return: date('d');
+    Sample 3
+        multiply:
+          params: {num1: int, num2: int}
+          return: num1 * num2;
 
-            // $ php sample.php today
-            // $ 20
-
-        Sample 3
-            multiply:
-              params: {num1: int, num2: int}
-              return: num1 * num2;
-
-            // $ php sample.php multiply 4 10
-            // $ 40
+        // $ php sample.php multiply 4 10
+        // $ 40
 
 License Information
 ===================
