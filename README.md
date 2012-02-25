@@ -10,6 +10,28 @@ How to install
 * Run composer.json
 * Run bin/run_phar
 
+Usage
+===================
+How to use
+
+* First you need to instantiate the class in Judi php file that will start the application from the command line and call the run method passing a yaml file with the settings necessary to meet the requirements of your application.
+
+    sample.php
+
+        $judi = new Judi\Judi();
+        $judi->run(__DIR__ . '/config.yml');
+
+* Configurations
+
+    config.yml
+
+        positive:
+          params: {num: int}
+          return: num > 0 ? true : false;
+
+        // $ positive 3
+        // return true
+
 License Information
 ===================
 
