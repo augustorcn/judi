@@ -49,6 +49,31 @@ How to use
         // $ php sample.php multiply 4 10
         // $ 40
 
+    Sample 4 - You can call methods
+
+        multiply:
+          params: {num1: int, num2: int}
+          return: Calc\multiply();
+
+        // $ php sample.php multiply 4 10
+        // $ 40
+
+    Sample 5 - You can add more options
+
+        calc:
+          add:
+            params: {num1: int, num2: int}
+            return: Calc\add();
+          multiply:
+            params: {num1: int, num2: int}
+            return: Calc\multiply();
+
+        // $ php sample.php calc add 4 10
+        // $ 14
+
+        // $ php sample.php calc multiply 4 10
+        // $ 14
+
 License Information
 ===================
 
