@@ -25,12 +25,28 @@ How to use
 
     config.yml
 
-        positive:
-          params: {num: int}
-          return: num > 0 ? true : false;
+        Sample 1
+            positive:
+              params: {num: int}
+              return: num > 0 ? true : false;
 
-        // $ positive 3
-        // return true
+            // $ php sample.php positive 3
+            // $ true
+
+        Sample 2
+            today:
+              return: date('d');
+
+            // $ php sample.php today
+            // $ 20
+
+        Sample 3
+            multiply:
+              params: {num1: int, num2: int}
+              return: num1 * num2;
+
+            // $ php sample.php multiply 4 10
+            // $ 40
 
 License Information
 ===================
