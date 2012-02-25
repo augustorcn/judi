@@ -74,6 +74,14 @@ How to use
         // $ php sample.php calc multiply 4 10
         // $ 40
 
+    Sample 6 - You can execute a input operation
+
+        calc:
+          return: input
+
+        // $ php sample.php calc ((((2 / 1) + 10) / 2) * 4) + 110 / 2
+        // $ 79
+
 License Information
 ===================
 
