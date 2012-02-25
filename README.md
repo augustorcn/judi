@@ -16,12 +16,15 @@ How to use
 
 * sample.php - First you need to instantiate the class in Judi php file that will start the application from the command line and call the run method passing a yaml file with the settings necessary to meet the requirements of your application.
 
-    $judi = new Judi\Judi();
-    $judi->run(__DIR__ . '/config.yml');
+    Sample
+
+        $judi = new Judi\Judi();
+        $judi->run(__DIR__ . '/config.yml');
 
 * config.yml - Configurations
 
     Sample 1
+
         positive:
           params: {num: int}
           return: num > 0 ? true : false;
@@ -30,6 +33,7 @@ How to use
         // $ true
 
     Sample 2
+
         today:
           return: date('d');
 
@@ -37,6 +41,7 @@ How to use
         // $ 20
 
     Sample 3
+
         multiply:
           params: {num1: int, num2: int}
           return: num1 * num2;
