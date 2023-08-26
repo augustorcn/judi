@@ -1,10 +1,11 @@
-Judi [![Build Status](https://secure.travis-ci.org/augustorcn/Judi.png)](http://travis-ci.org/augustorcn/Judi)
+Judi
 ===================
 
 Judi is a tool that helps you integrate the command line with its application in php.
 
 Install
 ===================
+
 How to install
 
 * Run composer.json
@@ -12,6 +13,7 @@ How to install
 
 Usage
 ===================
+
 How to use
 
 * sample.php - First you need to instantiate the class in Judi php file that will start the application from the command line and call the run method passing a yaml file with the settings necessary to meet the requirements of your application.
